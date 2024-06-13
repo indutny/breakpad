@@ -1,0 +1,31 @@
+{
+  "name": "@indutny/breakpad",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Fast symbolication using breakpad symbol files",
+  "main": "lib/breakpad.js",
+  "files": [
+    "lib/*"
+  ],
+  "scripts": {
+    "format": "prettier --cache --write .",
+    "lint": "npm run check:eslint && npm run check:format",
+    "check:eslint": "eslint --cache .",
+    "check:format": "prettier --cache --check .",
+    "test": "npm run lint"
+  },
+  "author": "Fedor Indutny <238531+indutny@users.noreply.github.com>",
+  "license": "MIT",
+  "keywords": [
+    "breakpad",
+    "symbols",
+    "dump_syms"
+  ],
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.3.2"
+  }
+}
