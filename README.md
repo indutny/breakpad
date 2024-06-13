@@ -14,7 +14,7 @@ npm install @indutny/breakpad
 ```js
 import { createReadStream } from 'node:fs';
 
-import { symbolicateFrames } from '@indutny/inflate';
+import { symbolicateFrames } from '@indutny/breakpad';
 
 const symbolsFile = createReadStream('/tmp/1.sym');
 
