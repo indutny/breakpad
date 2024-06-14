@@ -12,7 +12,7 @@
     "lint": "npm run check:eslint && npm run check:format",
     "check:eslint": "eslint --cache .",
     "check:format": "prettier --cache --check .",
-    "test": "npm run lint"
+    "test": "ava"
   },
   "author": "Fedor Indutny <238531+indutny@users.noreply.github.com>",
   "license": "MIT",

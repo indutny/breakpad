@@ -14,5 +14,5 @@ export default {
     'no-plusplus': 'error',
     yoda: 'off',
   },
-  ignores: ['test.js'],
+  ignores: ['bench.js'],
 };
