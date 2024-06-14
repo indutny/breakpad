@@ -2,5 +2,15 @@
   "plugins": [
     "@babel/plugin-transform-modules-commonjs",
     ["babel-plugin-add-import-extension", { extension: "cjs", replace: true}],
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": 14,
+        }
+      }
+    ]
   ]
 }
