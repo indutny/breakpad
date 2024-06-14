@@ -1,0 +1,6 @@
+{
+  "plugins": [
+    "@babel/plugin-transform-modules-commonjs",
+    ["babel-plugin-add-import-extension", { extension: "cjs", replace: true}],
+  ]
+}

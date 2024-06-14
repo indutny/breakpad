@@ -3,3 +3,4 @@ test.js
 bench.js
 .eslintcache
 benchmark/*.sym
+lib/*.cjs

@@ -3,11 +3,17 @@
   "type": "module",
   "version": "1.0.5",
   "description": "Fast symbolication of crash reports using breakpad symbol files",
-  "main": "lib/breakpad.js",
+  "module": "lib/breakpad.js",
+  "main": "lib/breakpad.cjs",
+  "exports": {
+    "import": "./lib/breakpad.js",
+    "require": "./lib/breakpad.cjs"
+  },
   "files": [
     "lib/*"
   ],
   "scripts": {
+    "prepublish": "babel lib/*.js --out-file-extension=.cjs --out-dir=lib/",
     "format": "prettier --cache --write .",
     "lint": "npm run check:eslint && npm run check:format",
     "check:eslint": "eslint --cache .",
@@ -23,7 +29,10 @@
     "dump_syms"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.24.7",
     "ava": "^6.1.3",
+    "babel-plugin-add-import-extension": "^1.6.0",
     "eslint": "^9.4.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-ava": "^15.0.1",
