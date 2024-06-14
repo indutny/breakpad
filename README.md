@@ -2,6 +2,9 @@
 
 [![npm](https://img.shields.io/npm/v/@indutny/breakpad)](https://www.npmjs.com/package/@indutny/breakpad)
 
+Fast symbolication of crash reports using
+[breakpad symbol files](https://chromium.googlesource.com/breakpad/breakpad/+/master/docs/symbol_files.md).
+
 ## Installation
 
 ```sh
@@ -26,6 +29,15 @@ const result = await symbolicateFrames(
 );
 
 console.log(result);
+```
+
+## Benchmarks
+
+```sh
+$ npm run benchmark
+...
+Mean Throughput: 414.1mb/s
+StdDev: 0.9%
 ```
 
 ## LICENSE

@@ -2,3 +2,4 @@ node_modules
 test.js
 bench.js
 .eslintcache
+benchmark/*.sym

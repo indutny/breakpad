@@ -2,7 +2,7 @@
   "name": "@indutny/breakpad",
   "type": "module",
   "version": "1.0.4",
-  "description": "Fast symbolication using breakpad symbol files",
+  "description": "Fast symbolication of crash reports using breakpad symbol files",
   "main": "lib/breakpad.js",
   "files": [
     "lib/*"
@@ -12,7 +12,8 @@
     "lint": "npm run check:eslint && npm run check:format",
     "check:eslint": "eslint --cache .",
     "check:format": "prettier --cache --check .",
-    "test": "ava"
+    "test": "ava && npm run lint",
+    "benchmark": "node benchmark/index.js"
   },
   "author": "Fedor Indutny <238531+indutny@users.noreply.github.com>",
   "license": "MIT",
