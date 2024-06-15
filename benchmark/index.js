@@ -1,6 +1,5 @@
 import { createWriteStream } from 'node:fs';
 import { stat, rename, readFile } from 'node:fs/promises';
-import { Readable } from 'node:stream';
 import { pipeline } from 'node:stream/promises';
 
 import { symbolicateFrames } from '../lib/breakpad.js';
@@ -41,7 +40,9 @@ console.log('Running');
 async function one() {
   const start = performance.now();
 
-  const stream = Readable.from(SYMBOLS);
+  const stream = (function* () {
+    yield SYMBOLS;
+  })();
 
   const result = await symbolicateFrames(
     stream,
