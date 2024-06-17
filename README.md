@@ -36,8 +36,8 @@ console.log(result);
 ```sh
 $ npm run benchmark
 ...
-Mean Throughput: 471.8mb/s
-StdDev: 0.7%
+Mean Throughput: 689.5mb/s
+StdDev: 0.8%
 ```
 
 ## LICENSE

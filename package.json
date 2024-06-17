@@ -38,5 +38,8 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-ava": "^15.0.1",
     "prettier": "^3.3.2"
+  },
+  "dependencies": {
+    "@indutny/breakpad-parser-wasm": "^1.0.0"
   }
 }
