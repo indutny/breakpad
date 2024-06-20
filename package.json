@@ -40,6 +40,6 @@
     "prettier": "^3.3.2"
   },
   "dependencies": {
-    "@indutny/breakpad-parser-wasm": "^1.0.2"
+    "@indutny/breakpad-parser-wasm": "^1.0.3"
   }
 }
